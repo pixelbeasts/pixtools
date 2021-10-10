@@ -1,12 +1,36 @@
 #!/usr/bin/env bash
-# set -x
+
+set -x
 infile=$1
 
-size=$2
+size="${2}"
 # or hardwire it
 # size="24x24"
+size="512x512"
 
-outfile=${infile/.gif/-${size}.gif}
-convert $infile -resize $size  $outfile
+case $infile in
+    *.gif)
+        outfile="${infile/.gif/-${size}.gif}"
+        ;;
+
+    *.png)
+        outfile="${infile/.png/-${size}.gif}"
+        ;;
+
+    *)
+        echo "should be png or gif"
+esac
+
+
+# output format always gif
+# TODO - check infile format
+# outfile="${infile/.gif/-${size}.gif}"
+# outfile="${infile/.png/-${size}.gif}"
+
+# assetPath="assets/resized/${size}"
+# mkdir -p $assetPath
+# outfile="${infile/assets/$assetPath}"
+
+convert $infile  -interpolate Integer -filter point -resize $size  $outfile
 
 echo "resized $infile => $outfile"

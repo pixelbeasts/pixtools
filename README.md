@@ -39,7 +39,6 @@ to get this
 
 
 ## Makefile
-
 These two examples are in the [Makefile](Makefile) so you can just type:
 
 ```
@@ -47,6 +46,28 @@ make resize
 make composite
 ```
 to get an output file in `assets/composite.gif`
+
+## Example
+eg for myself to make a big 512x512 animated gif I did these steps:
+
+```
+# resize the background i wanted
+tools/resize.sh assets/backgrounds/glitch.gif 512x512
+
+# resize the icon - replace with your own beastie ID
+tools/resize.sh assets/icons/1322.png 512x512
+
+# composite the background over the icon
+tools/composite.sh assets/backgrounds/glitch-512x512.gif assets/icons/1322-512x512.gif
+
+# rename it
+mv assets/composite.gif assets/composites/beastie-1322.gif
+```
+
+gives me this file!
+
+![composite](assets/composites/beastie-1322.gif)
+
 
 ## Learn more!
 
