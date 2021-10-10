@@ -3,10 +3,10 @@
 set -x
 infile=$1
 
-size="${2}"
+# size="${2}"
 # or hardwire it
 # size="24x24"
-# size="512x512"
+size="256x256"
 
 case $infile in
     *.gif)

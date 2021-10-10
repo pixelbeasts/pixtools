@@ -23,7 +23,7 @@ you can edit the size settings in the [resize.sh](tools/resize.sh) script
 
 ## composite
 
-to composite one image over the other
+to composite one image over the other eg:
 
 ![back](assets/backgrounds/abstract-1-24x24.gif) x ![front](assets/icons/1322.gif)
 
@@ -32,7 +32,8 @@ to composite one image over the other
 tools/composite.sh assets/backgrounds/abstract-1-24x24.gif assets/icons/1322.gif
 ```
 
-to get this
+to get this:
+
 ![composite](assets/composite.gif)
 
 
