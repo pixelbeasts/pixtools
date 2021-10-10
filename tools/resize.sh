@@ -6,7 +6,7 @@ infile=$1
 size="${2}"
 # or hardwire it
 # size="24x24"
-size="512x512"
+# size="512x512"
 
 case $infile in
     *.gif)
