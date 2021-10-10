@@ -46,7 +46,10 @@ These two examples are in the [Makefile](Makefile) so you can just type:
 make resize
 make composite
 ```
-
-
 to get an output file in `assets/composite.gif`
 
+## Learn more!
+
+for more things you can do with Imagemagick compositing, read the docs!
+
+https://legacy.imagemagick.org/Usage/anim_mods/
