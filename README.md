@@ -15,8 +15,9 @@ To resize a background:
 tools/resize.sh assets/backgrounds/abstract-1.gif 256x256
 ```
 
-eg to get this
-![glitch](assets/backgrounds/abstract-1-24x24.gif)
+eg to get this:
+
+![glitch](assets/backgrounds/skyline-sq-256x256.gif)
 
 you can edit the size settings in the [resize.sh](tools/resize.sh) script
 
@@ -25,16 +26,18 @@ you can edit the size settings in the [resize.sh](tools/resize.sh) script
 
 to composite one image over the other eg:
 
-![back](assets/backgrounds/abstract-1-24x24.gif) x ![front](assets/icons/1322.gif)
+![back](assets/backgrounds/skyline-sq-256x256.gif) x ![front](assets/icons/7564-256x256.gif)
 
 
 ```
-tools/composite.sh assets/backgrounds/abstract-1-24x24.gif assets/icons/1322.gif
+tools/composite.sh \
+    assets/backgrounds/skyline-sq-256x256.gif \
+    assets/icons/7564-256x256.gif
 ```
 
 to get this:
 
-![composite](assets/composite.gif)
+![composite](assets/composites/7564-anim.gif)
 
 
 ## Makefile
@@ -68,8 +71,7 @@ gives me this file!
 ![composite](assets/composites/beastie-1322.gif)
 
 ## grab beastie
-I've put all the transparent beasties in the repo but in case you wanted to you can
-get your transparent beast go to visit this URL with your beast's ID:
+For the pixelbeasts project, I've put all the transparent beasties in the repo but in case you wanted to you can get your transparent beast go to visit this URL with your beast's ID:
 
 `https://beastopia.com/nobg/<Beast-ID>.png`
 
